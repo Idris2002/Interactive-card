@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-bg">
+        <img src="images\bg-card-back.png" alt="" />
+        <img src="images\bg-card-front.png" alt="" />
+      </div>
+      <div class="card-container">
+        <field class="input">
+          <label for="holderName">CARDHOLDER NAME</label>
+          <input type="text" placeholder="e.g. AppleSeed" id="holderName" />
+        </field>
+
+        <field class="input">
+          <label for="cardNumber">CARD NUMBER</label>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 000"
+            id="cardNumber"
+          />
+        </field>
+
+        <field class="input">
+          <div class="label-grp">
+            <label for="">EXP. DATE (MM/YY)</label>
+            <label for="cvc">CVC</label>
+          </div>
+          <div class="input-grp">
+            <input type="number" placeholder="MM" />
+            <input type="number" placeholder="YY" />
+            <input type="number" placeholder="e.g. 123" id="cvc" />
+          </div>
+        </field>
+
+        <button type="submit">Confirm</button>
+      </div>
+    </main>
+  </body>
+</html>

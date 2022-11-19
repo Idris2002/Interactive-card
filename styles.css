@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+main {
+    font-size: 12px;
+    height: 100%;
+}
+
+.card-bg {
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-bg img:first-of-type {
+    max-width: 70%;
+    height: auto;
+    transform: translate(5rem, 1.3rem);
+}
+
+.card-bg img:last-of-type {
+    max-width: 70%;
+    height: auto;
+    transform: translate(1.5rem, -2rem);
+    z-index: 1;
+}
+
+.card-container {
+    padding: 0 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.label-grp {
+    display: flex;
+    gap: 1rem;
+}
+
+label {
+    /* color: hsl(279, 6%, 55%); */
+    color: hsl(278, 68%, 11%);
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input input {
+    display: block;
+    outline: none;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    border: 0.8px solid hsl(279, 6%, 55%);
+    padding: 0 0.8rem;
+}
+
+.label-grp {
+
+}
+
+.input-grp {
+    display: flex;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.input-grp input:nth-child(1), .input-grp input:nth-child(2) {
+    width: 25%;
+}
+
+.input-grp input:nth-child(3) {
+    width: 50%;
+}
+
+button {
+    border: none;
+    height: 1.7rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    background-color: hsl(278, 68%, 11%);
+    padding: 5px auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        display: flex;
+    }
+
+    .card-bg {
+        height: 100vh;
+        width: 40%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .card-bg img:first-of-type {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .card-bg img:last-of-type {
+        width: 100%;
+        height: auto;
+        transform: translateX(3rem);
+    }
+
+    .card-container {
+        margin: auto;
+        padding: 0 20%;
+    }
+}
