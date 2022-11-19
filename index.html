@@ -18,33 +18,35 @@
         <img src="images\bg-card-front.png" alt="" />
       </div>
       <div class="card-container">
-        <field class="input">
-          <label for="holderName">CARDHOLDER NAME</label>
-          <input type="text" placeholder="e.g. AppleSeed" id="holderName" />
-        </field>
+        <div class="card-details">
+          <field class="input">
+            <label for="holderName">CARDHOLDER NAME</label>
+            <input type="text" placeholder="e.g. AppleSeed" id="holderName" />
+          </field>
 
-        <field class="input">
-          <label for="cardNumber">CARD NUMBER</label>
-          <input
-            type="text"
-            placeholder="e.g. 1234 5678 9123 000"
-            id="cardNumber"
-          />
-        </field>
+          <field class="input">
+            <label for="cardNumber">CARD NUMBER</label>
+            <input
+              type="text"
+              placeholder="e.g. 1234 5678 9123 000"
+              id="cardNumber"
+            />
+          </field>
 
-        <field class="input">
-          <div class="label-grp">
-            <label for="">EXP. DATE (MM/YY)</label>
-            <label for="cvc">CVC</label>
-          </div>
-          <div class="input-grp">
-            <input type="number" placeholder="MM" />
-            <input type="number" placeholder="YY" />
-            <input type="number" placeholder="e.g. 123" id="cvc" />
-          </div>
-        </field>
+          <field class="input">
+            <div class="label-grp">
+              <label for="">EXP. DATE (MM/YY)</label>
+              <label for="cvc">CVC</label>
+            </div>
+            <div class="input-grp">
+              <input type="number" placeholder="MM" />
+              <input type="number" placeholder="YY" />
+              <input type="number" placeholder="e.g. 123" id="cvc" />
+            </div>
+          </field>
 
-        <button type="submit">Confirm</button>
+          <button type="submit">Confirm</button>
+        </div>
       </div>
     </main>
   </body>
